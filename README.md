@@ -13,7 +13,7 @@ Usage: command-line, run the following command:
   parameters:
        -f: InputFile Name: followed by the name of the file.
        -c: Threshold to determine the splits to be filtered.
-			 -o: OutputFile Name-the reconstructed result saved in it.
+       -o: OutputFile Name-the reconstructed result saved in it.
        
 
   
