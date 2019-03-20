@@ -1,0 +1,39 @@
+#nexus
+
+BEGIN Taxa;
+DIMENSIONS ntax=8;
+TAXLABELS
+[1] 'a'
+[2] 'b'
+[3] 'c'
+[4] 'd'
+[5] 'e'
+[6] 'f'
+[7] 'g'
+[8] 'h'
+;
+END; [Taxa]
+
+BEGIN splits;
+DIMENSIONS ntax=8 nsplits=17;
+FORMAT labels=no weights=yes confidences=no intervals=no;
+MATRIX
+[1, size=2]	197		1 2,
+[2, size=2]	95.5		1 2 5 6 7 8,
+[3, size=2]	70.5		1 2 3 4 5 8,
+[4, size=3]	1		1 2 8,
+[5, size=3]	97		1 2 3 4 5,
+[6, size=3]	2		1 2 3,
+[7, size=3]	2		1 2 4,
+[8, size=3]	0.5		1 6 7,
+[9, size=4]	166.5		1 2 3 4,
+[10, size=1]	93.5		1,
+[11, size=1]	105		8 7 6 5 4 3 1,
+[12, size=1]	188		8 7 6 5 4 2 1,
+[13, size=1]	181.5		8 7 6 5 3 2 1,
+[14, size=1]	260		8 7 6 4 3 2 1,
+[15, size=1]	87		8 7 5 4 3 2 1,
+[16, size=1]	82		8 6 5 4 3 2 1,
+[17, size=1]	172		7 6 5 4 3 2 1,
+;
+END; [splits]
